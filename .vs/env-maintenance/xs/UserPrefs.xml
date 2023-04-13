@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{FC149451-AD93-19DD-9760-858D099B0861}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Scene_Main/Door.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Scene_Main/Door.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="env-maintenance" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Scene_Main" expanded="True">
+                  <Node name="Door.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0a68c599-a9b0-4598-a527-91409e38c3c1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
