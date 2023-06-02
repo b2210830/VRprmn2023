@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,11 +10,13 @@ namespace NsUnityVr.Title
     {
         [SerializeField] Button _startBtn = null;
         [SerializeField] Button _tuterealBtn = null;
+		//[SerializeField] Button _practicalBtn = null;//wip2023
 
-        [SerializeField] Scene _startScene = Scene.Main;
+		[SerializeField] Scene _startScene = Scene.Main;
         [SerializeField] Scene _tuterealScene = Scene.Title; // WIP
+		//[SerializeField] Scene _practicalScene = Scene.test; // WIPprmn2023
 
-        void Start()
+		void Start()
         {
             _startBtn.onClick.AddListener(() => {
                 SEManager.Instance.PlaySE(SE.submit);
