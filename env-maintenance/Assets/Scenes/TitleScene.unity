@@ -4200,8 +4200,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startBtn: {fileID: 978075018}
   _tuterealBtn: {fileID: 1255262198}
+  _practicalBtn: {fileID: 1735235233}
   _startScene: 1
   _tuterealScene: 1
+  _practicalScene: 2
 --- !u!1 &1812778192
 GameObject:
   m_ObjectHideFlags: 0

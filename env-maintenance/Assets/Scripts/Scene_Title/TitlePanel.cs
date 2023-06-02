@@ -10,11 +10,11 @@ namespace NsUnityVr.Title
     {
         [SerializeField] Button _startBtn = null;
         [SerializeField] Button _tuterealBtn = null;
-		//[SerializeField] Button _practicalBtn = null;//wip2023
+		[SerializeField] Button _practicalBtn = null;//wip2023
 
 		[SerializeField] Scene _startScene = Scene.Main;
         [SerializeField] Scene _tuterealScene = Scene.Title; // WIP
-		//[SerializeField] Scene _practicalScene = Scene.test; // WIPprmn2023
+		[SerializeField] Scene _practicalScene = Scene.test; // WIPprmn2023
 
 		void Start()
         {
@@ -26,6 +26,11 @@ namespace NsUnityVr.Title
                 SEManager.Instance.PlaySE(SE.submit);
                 SceneLoader.Instance.LoadTheScene(_tuterealScene);
             });
-        }
+			_practicalBtn.onClick.AddListener(() => {
+				SEManager.Instance.PlaySE(SE.submit);
+				SceneLoader.Instance.LoadTheScene(_practicalScene);
+			});
+
+		}
     }
 }

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -11,7 +11,8 @@ namespace NsUnityVr.Systems
     public enum Scene
     {
         Title,
-        Main
+        Main,
+		test
     }
 
     /// <summary>
@@ -30,7 +31,8 @@ namespace NsUnityVr.Systems
             // シーン辞書を初期化
             _sceneDictionary = new Dictionary<Scene, string> {
                 {Scene.Title, "TitleScene"},
-                {Scene.Main, "MainScene"}
+                {Scene.Main, "MainScene"},
+				{Scene.test,"testScene" }//wip2023
             };
         }
 
