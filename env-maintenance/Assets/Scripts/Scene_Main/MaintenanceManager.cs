@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,6 +15,7 @@ public class MaintenanceManager : SingletonMonoBehaviour<MaintenanceManager>
     [SerializeField] Sprite _maru;
     [SerializeField] Sprite _batsu;
 
+	public static float i = 0f; 　//位置調節のための変数
     void Start()
     {
         _length = _MaintainedObjectsList.Count;
@@ -53,6 +54,7 @@ public class MaintenanceManager : SingletonMonoBehaviour<MaintenanceManager>
                 text.text = hint.GetHintMessage(obj.Type);
                 hintPanel.gameObject.SetActive(true);
             }
+			i=i+0.3f;　//2023
         }
 
         foreach(var obj in _MWGObjectsList)
@@ -77,6 +79,7 @@ public class MaintenanceManager : SingletonMonoBehaviour<MaintenanceManager>
                 text.text = hint.GetHintMessage(obj.Type);
                 hintPanel.gameObject.SetActive(true);
             }
+			i = i + 0.3f;//2023
         }
 
         // 湿温度-------------------------------------------------------------------
@@ -100,11 +103,12 @@ public class MaintenanceManager : SingletonMonoBehaviour<MaintenanceManager>
 
     private GameObject SetMarkCanvas(Transform transform)
     {
-        // オブジェクトの上部に判定マークのキャンバスを設置
-        var objPos = transform.position;
-        var offset_y = .5f;
-        var targetPos = new Vector3(objPos.x, objPos.y + offset_y, objPos.z);
-        var markCanvas = Instantiate<GameObject>(_markCanvasPrefab, targetPos, Quaternion.identity);
+		// オブジェクトの上部に判定マークのキャンバスを設置
+		//var objPos = transform.position;
+		//var offset_y = .5f;
+		//var targetPos = new Vector3(objPos.x, objPos.y + offset_y, objPos.z);
+		var targetPos = new Vector3(9.3f, 3.3f-i, 6.7f);  //チェックリストに表示
+		var markCanvas = Instantiate<GameObject>(_markCanvasPrefab, targetPos, Quaternion.identity);
         markCanvas.transform.SetParent(transform);
         return markCanvas;
     }
