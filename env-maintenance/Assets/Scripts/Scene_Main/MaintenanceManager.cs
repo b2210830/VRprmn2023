@@ -76,8 +76,8 @@ public class MaintenanceManager : SingletonMonoBehaviour<MaintenanceManager>
                 var hintPanel = markCanvas.transform.Find("HintPanel");
                 var text = hintPanel.transform.Find("Text").GetComponent<Text>();
                 var hint = new Hint();
-                text.text = hint.GetHintMessage(obj.Type);
-                hintPanel.gameObject.SetActive(true);
+				text.text = hint.GetHintMessage(obj.Type);
+				hintPanel.gameObject.SetActive(true);
             }
 			i = i + 0.3f;//2023
         }
